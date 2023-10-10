@@ -1,5 +1,5 @@
 {
-    "biulds": [{
+    "builds": [{
         "src": "execute/wgsi.py",
         "use": "@vercel/python"
     }], 
