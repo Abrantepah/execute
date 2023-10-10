@@ -1,12 +1,16 @@
 {
-    "builds": [{
-        "src": "execute/wgsi.py",
-        "use": "@vercel/python"
-    }], 
-    "routes":[
-        {
-            "src": "/(.*)",
-            "dest": "execute/wsgi.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "manage.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/manage.py"
+    }
+  ],
+
 }
